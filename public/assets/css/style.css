@@ -1,0 +1,35 @@
+/* Resetear márgenes y rellenos para evitar estilos predeterminados del navegador */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333; /* Color de fondo del header */
+    color: #fff; /* Color del texto en el header */
+    padding: 15px; /* Espaciado interno del header */
+    text-align: center; /* Centrar el contenido del header */
+}
+
+/* Estilos para el logo en el header */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para la navegación en el header */
+nav ul {
+    list-style: none; /* Eliminar los estilos de la lista */
+}
+
+nav ul li {
+    display: inline-block; /* Mostrar elementos de lista en línea */
+    margin-right: 10px; /* Márgenes a la derecha para separar los elementos */
+}
+
+nav a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminar subrayado en los enlaces */
+    font-weight: bold;
+}
