@@ -45,7 +45,8 @@
 
 <script>
     // Hacer una solicitud GET a la API
-    fetch('urlApi')
+    const urlSite = 'YourUrl';
+    fetch(urlSite + '/api/survivors/percentage')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error de red - ${response.status}`);
@@ -63,7 +64,7 @@
         });
 
     // Hacer una solicitud GET a la API
-    fetch('urlApi')
+    fetch(urlSite + '/api/infected/percentage')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error de red - ${response.status}`);
@@ -81,7 +82,7 @@
         });
 
     // Hacer una solicitud GET a la API
-    fetch('urlApi')
+    fetch(urlSite + '/api/items/points-lost')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error de red - ${response.status}`);
@@ -99,7 +100,7 @@
         });
 
     // Hacer una solicitud GET a la API
-    fetch('urlApi')
+    fetch(urlSite + '/api/items/average')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error de red - ${response.status}`);
